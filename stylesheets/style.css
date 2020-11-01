@@ -33,6 +33,9 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
 }
+.contactBTN-outline{
+  background-color: transparent;
+}
 .title{
   max-width: 70%;
   font-weight: 800;
