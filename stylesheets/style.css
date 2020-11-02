@@ -101,16 +101,27 @@ body {
 }
 .school {
   width: 100%;
-  margin: 2rem 0rem;
+  padding: 4rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   font-weight: 200;
   align-items: center;
+  background-color: black;
+  color: white
 }
 .sm {
   height: 100%;
+}
+.btnw{
+  color: white;
+  border: 2px solid white;
+  transition: .4s;
+}
+.btnw:hover{
+  color: black;
+  background-color: white;
 }
 .only-text {
   text-align: center;
