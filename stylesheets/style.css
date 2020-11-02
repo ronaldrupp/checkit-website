@@ -15,6 +15,8 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   position: fixed;
@@ -25,7 +27,8 @@ body {
   align-items: center;
   padding: 0px 2rem;
   justify-content: space-between;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 .contactBTN {
   background-color: black;
@@ -39,11 +42,11 @@ body {
 }
 .contactBTN-outline {
   background-color: transparent;
+  color: black
 }
 .title {
   max-width: 70%;
   font-weight: 800;
-  margin-top: 5rem;
   font-size: 3rem;
 }
 .product-img {
@@ -53,6 +56,8 @@ body {
 }
 .leftsection {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 100vh;
   background: linear-gradient(
@@ -102,9 +107,12 @@ body {
   text-align: center;
   font-weight: 200;
 }
+.sm {
+  height: 100%;
+}
 .only-text {
   text-align: center;
-  margin: 10rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,7 +128,7 @@ body {
   font-weight: 200;
   margin: 0;
 }
-.non-lin{
+.non-lin {
   background: transparent;
 }
 @media only screen and (max-width: 768px) {
@@ -140,7 +148,7 @@ body {
   .title {
     font-size: 2rem;
   }
-  .product-img{
+  .product-img {
     width: 90%;
   }
 }
