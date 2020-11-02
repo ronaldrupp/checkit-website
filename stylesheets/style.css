@@ -1,20 +1,23 @@
-html{
+html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 body {
   font-family: "Jost", sans-serif;
   font-weight: 900;
   margin: 0px;
+  font-size: 16px;
 }
-.container{
- display: flex;
- flex-wrap: wrap;
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.header{
-  position: absolute;
+.header {
+  position: fixed;
   width: 100%;
   height: 4rem;
   top: 0px;
@@ -22,8 +25,9 @@ body {
   align-items: center;
   padding: 0px 2rem;
   justify-content: space-between;
+  backdrop-filter: blur(1rem);
 }
-.contactBTN{
+.contactBTN {
   background-color: black;
   padding: 0.5rem;
   border-radius: 20px;
@@ -33,10 +37,10 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
 }
-.contactBTN-outline{
+.contactBTN-outline {
   background-color: transparent;
 }
-.title{
+.title {
   max-width: 70%;
   font-weight: 800;
   margin-top: 5rem;
@@ -61,7 +65,7 @@ body {
 .rightsection {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 50%;
   padding: 2rem;
   height: 100vh;
@@ -70,19 +74,73 @@ body {
   font-weight: 300;
   max-width: 70%;
 }
-
+.team {
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+}
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4rem 0rem;
+  text-align: center;
+}
+.team-pic {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin: 0rem 1.5rem;
+  border-radius: 10rem;
+}
+.school {
+  width: 100%;
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 200;
+}
+.only-text {
+  text-align: center;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.team-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem;
+}
+.role {
+  font-weight: 200;
+  margin: 0;
+}
+.non-lin{
+  background: transparent;
+}
 @media only screen and (max-width: 768px) {
   .leftsection {
     display: flex;
     width: 100%;
+    height: 100%;
     flex: none;
-    height: 50vh;
+    justify-content: center;
   }
   .rightsection {
     width: 100%;
-    height: 50vh;
+    text-align: center;
+    align-items: center;
+    height: 100%;
   }
-  .title{
+  .title {
     font-size: 2rem;
+  }
+  .product-img{
+    width: 90%;
   }
 }
