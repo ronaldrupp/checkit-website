@@ -42,7 +42,7 @@ body {
 }
 .contactBTN-outline {
   background-color: transparent;
-  color: black
+  color: black;
 }
 .title {
   max-width: 70%;
@@ -109,17 +109,17 @@ body {
   font-weight: 200;
   align-items: center;
   background-color: black;
-  color: white
+  color: white;
 }
 .sm {
   height: 100%;
 }
-.btnw{
+.btnw {
   color: white;
   border: 2px solid white;
-  transition: .4s;
+  transition: 0.4s;
 }
-.btnw:hover{
+.btnw:hover {
   color: black;
   background-color: white;
 }
@@ -143,6 +143,14 @@ body {
 }
 .non-lin {
   background: transparent;
+}
+.impressum-text {
+  font-weight: 300;
+  max-width: 70%;
+  text-align: -webkit-auto;
+}
+.text-p {
+  text-align: justify;
 }
 @media only screen and (max-width: 768px) {
   .leftsection {
